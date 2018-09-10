@@ -15,6 +15,8 @@
 }
 ```
 
+Voilà, [Google Analytics](https://analytics.google.com) is integrated into your [Nuxt.js](https://github.com/nuxt/nuxt.js) application and will track every page view!
+
 For `pageview` hits _only_, if no `params` are provided, then the `document.title` and `location.href` values will be auto-filled. This allows you to send valid requests by writing:
 
 ```ga.send('pageview')``` is the same as ```ga.send('pageview', { dt:document.title, dl:location.href })```
