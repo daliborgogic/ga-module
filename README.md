@@ -11,9 +11,13 @@
 {
   modules: [
     [ '@nuxtjs/ga-module', { trackingID: 'UA-XXXXXXXX-X' }]
- ]
+  ]
 }
 ```
+
+For `pageview` hits _only_, if no `params` are provided, then the `document.title` and `location.href` values will be auto-filled. This allows you to send valid requests by writing:
+
+```ga.send('pageview')``` is the same as ```ga.send('pageview', { dt:document.title, dl:location.href })```
 
 ## API
 
@@ -79,14 +83,6 @@ Please follow the links for each available parameter set:
 * [Social](https://developers.google.com/analytics/devguides/collection/protocol/v1/parameters#social)
 * [Timing](https://developers.google.com/analytics/devguides/collection/protocol/v1/parameters#timing)
 * [Transaction](https://developers.google.com/analytics/devguides/collection/protocol/v1/parameters#ecomm)
-
-For `pageview` hits _only_, if no `params` are provided, then the `document.title` and `location.href` values will be auto-filled. This allows you to send valid requests by writing:
-
-```javascript
-ga.send('pageview')
-// is the same as:
-//=> ga.send('pageview', { dt:document.title, dl:location.href })
-```
 
 ## License
 
