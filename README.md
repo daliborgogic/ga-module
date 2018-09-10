@@ -7,6 +7,8 @@
 - Add `daliborgogic/ga-module` dependency using yarn or npm to your project
 - Add `daliborgogic/ga-module` to modules section of `nuxt.config.js`
 
+Replace ```UA-XXXXXXXX-X``` by your Google Analytics tracking ID.
+
 ```javascript
 {
   modules: [
