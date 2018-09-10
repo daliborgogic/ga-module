@@ -4,13 +4,13 @@
 
 ## Setup
 
-- Add `@nuxtjs/ga-module` dependency using yarn or npm to your project
-- Add `@nuxtjs/ga-module` to modules section of `nuxt.config.js`
+- Add `daliborgogic/ga-module` dependency using yarn or npm to your project
+- Add `daliborgogic/ga-module` to modules section of `nuxt.config.js`
 
 ```javascript
 {
   modules: [
-    [ '@nuxtjs/ga-module', { trackingID: 'UA-XXXXXXXX-X' }]
+    [ 'daliborgogic/ga-module', { trackingID: 'UA-XXXXXXXX-X' }]
   ]
 }
 ```
