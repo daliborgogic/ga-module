@@ -1,0 +1,40 @@
+{
+  "name": "ga-module",
+  "version": "0.1.0",
+  "description": "Google Analytics Module for Nuxt.js",
+  "scripts": {
+    "lint": "node_modules/.bin/eslint --ext .js lib test",
+    "pretest": "npm run lint",
+    "test": "node_modules/.bin/ava --serial --verbose",
+    "prerelease": "npm run lint",
+    "release": "standard-version && git push origin master:publish --follow-tags && npm publish"
+  },
+  "main": "lib/module.js",
+  "devDependencies": {
+    "ava": "^0.25.0",
+    "eslint": "^5.5.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^7.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "nuxt-edge": "^2.0.0-25603961.baaf67d",
+    "standard-version": "^4.4.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "nuxt"
+  ],
+  "author": "Dalibor Gogic <mail@daliborgogic.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daliborgogic/ga-module.git"
+  },
+  "bugs": {
+    "url": "https://github.com/daliborgogic/ga-module/issues"
+  },
+  "homepage": "https://github.com/daliborgogic/ga-module#readme"
+}
