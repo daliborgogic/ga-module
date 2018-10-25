@@ -12,7 +12,7 @@ Replace ```UA-XXXXXXXX-X``` by your Google Analytics tracking ID.
 ```javascript
 {
   modules: [
-    [ 'daliborgogic/ga-module', { trackingID: 'UA-XXXXXXXX-X' }]
+    [ 'ga-module', { trackingID: 'UA-XXXXXXXX-X' }]
   ]
 }
 ```
