@@ -1,5 +1,5 @@
 {
-  "name": "ga-module",
+  "name": "@daliborgogic/ga-module",
   "version": "0.1.0",
   "description": "Google Analytics Module for Nuxt.js",
   "scripts": {
