@@ -1,4 +1,4 @@
-# ga-module [wip]
+# ga-module
 
 > A [Nuxt.js](https://github.com/nuxt/nuxt.js) tiny client-side module for tracking with [Google Analytics](https://analytics.google.com)
 
